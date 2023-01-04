@@ -26,7 +26,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: actions/testItl
+      - uses: ritin-bhardwaj/test-github-actions@v1.0.0
+
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           IAP_TOKEN: ${{secrets.IAP_TOKEN}}
