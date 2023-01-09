@@ -26,5 +26,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - run: echo ${{secrets.IAP_TOKE}}
+      - name: testItl
+        uses: ritin-bhardwaj/test-github-actions@v1.1.0
+
      
